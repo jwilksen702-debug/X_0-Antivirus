@@ -1,0 +1,456 @@
+/* RETRO 2012 STYLE - BABYBLAU & WEISS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ADD8E6; /* Babyblau */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    text-align: center;
+    border: 3px solid #333;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0066CC;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    letter-spacing: 3px;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-btn {
+    padding: 12px 25px;
+    background-color: #FFFFFF;
+    border: 2px solid #333;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 0px #999;
+}
+
+.nav-btn:hover {
+    background-color: #ADD8E6;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #999;
+}
+
+.nav-btn:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px #999;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #FFFFFF;
+    padding: 60px 40px;
+    text-align: center;
+    border: 3px solid #333;
+    margin-bottom: 30px;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.2);
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #0066CC;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 18px 40px;
+    background-color: #0066CC;
+    color: #FFFFFF;
+    border: 2px solid #003366;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 5px 5px 0px #003366;
+}
+
+.cta-button:hover {
+    background-color: #0052A3;
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px #003366;
+}
+
+.cta-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #003366;
+}
+
+.trial-info {
+    font-size: 14px;
+    color: #0066CC;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Features Section */
+.features {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border: 3px solid #333;
+    margin-bottom: 30px;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.2);
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #0066CC;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #ADD8E6;
+    padding-bottom: 15px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.feature-box {
+    background-color: #F0F8FF;
+    border: 2px solid #333;
+    padding: 25px;
+    box-shadow: 4px 4px 0px #ADD8E6;
+    transition: all 0.3s;
+}
+
+.feature-box:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px #ADD8E6;
+}
+
+.feature-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0066CC;
+    margin-bottom: 12px;
+}
+
+.feature-box p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Pricing Section */
+.pricing {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border: 3px solid #333;
+    margin-bottom: 30px;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 36px;
+    color: #0066CC;
+    margin-bottom: 40px;
+}
+
+.pricing-box {
+    background-color: #F0F8FF;
+    border: 3px solid #0066CC;
+    padding: 40px;
+    box-shadow: 6px 6px 0px #0066CC;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.pricing-box h3 {
+    font-size: 24px;
+    color: #0066CC;
+    margin-bottom: 25px;
+}
+
+.price-highlight {
+    background-color: #FFFFFF;
+    border: 2px solid #0066CC;
+    padding: 25px;
+    margin: 25px 0;
+    box-shadow: 3px 3px 0px #ADD8E6;
+}
+
+.free-period {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00AA00;
+    margin-bottom: 10px;
+}
+
+.then {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0066CC;
+}
+
+.price span {
+    font-size: 24px;
+    color: #666;
+}
+
+.price-features {
+    list-style: none;
+    text-align: left;
+    margin: 25px 0;
+}
+
+.price-features li {
+    padding: 10px 0;
+    color: #666;
+    border-bottom: 1px solid #DDD;
+}
+
+.download-button {
+    padding: 18px 40px;
+    background-color: #00AA00;
+    color: #FFFFFF;
+    border: 2px solid #006600;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 5px 5px 0px #006600;
+    margin-top: 20px;
+}
+
+.download-button:hover {
+    background-color: #009900;
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px #006600;
+}
+
+/* Download Section */
+.download {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border: 3px solid #333;
+    margin-bottom: 30px;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.download h2 {
+    font-size: 36px;
+    color: #0066CC;
+    margin-bottom: 25px;
+}
+
+.download p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.os-button {
+    padding: 15px 30px;
+    background-color: #ADD8E6;
+    border: 2px solid #333;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    box-shadow: 4px 4px 0px #666;
+}
+
+.os-button:hover {
+    background-color: #7EC8E3;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #666;
+}
+
+.system-req {
+    font-size: 13px;
+    color: #999;
+    font-style: italic;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border: 3px solid #333;
+    margin-bottom: 30px;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.2);
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #0066CC;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 2px solid #333;
+    background-color: #F0F8FF;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-shadow: 3px 3px 0px #ADD8E6;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 0px #ADD8E6;
+}
+
+.submit-button {
+    padding: 15px;
+    background-color: #0066CC;
+    color: #FFFFFF;
+    border: 2px solid #003366;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    box-shadow: 4px 4px 0px #003366;
+}
+
+.submit-button:hover {
+    background-color: #0052A3;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #003366;
+}
+
+.contact-email {
+    text-align: center;
+    font-size: 16px;
+    color: #0066CC;
+    font-weight: bold;
+}
+
+.contact-email a {
+    color: #0066CC;
+    text-decoration: none;
+    border-bottom: 2px solid #0066CC;
+}
+
+/* Footer */
+.footer {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border: 3px solid #333;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.footer p {
+    color: #666;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.footer a {
+    color: #0066CC;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 36px;
+    }
+    
+    .hero h2 {
+        font-size: 28px;
+    }
+    
+    .features h2 {
+        font-size: 28px;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+    }
+    
+    .os-button {
+        width: 100%;
+    }
+    
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .nav-btn {
+        width: 100%;
+    }
+}
