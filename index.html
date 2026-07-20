@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <!-- Header -->
-        <header class="header">
+        <header class="header" id="home">
             <div class="logo-section">
                 <h1 class="logo">X_0 ANTIVIRUS</h1>
                 <p class="tagline">Schutz für dein System</p>
@@ -18,10 +18,10 @@
 
         <!-- Navigation -->
         <nav class="navbar">
-            <button class="nav-btn">HOME</button>
-            <button class="nav-btn">FEATURES</button>
-            <button class="nav-btn">DOWNLOAD</button>
-            <button class="nav-btn">KONTAKT</button>
+            <button class="nav-btn" onclick="scrollToSection('home')">HOME</button>
+            <button class="nav-btn" onclick="scrollToSection('features')">FEATURES</button>
+            <button class="nav-btn" onclick="scrollToSection('download')">DOWNLOAD</button>
+            <button class="nav-btn" onclick="scrollToSection('contact')">KONTAKT</button>
         </nav>
 
         <!-- Hero Section -->
@@ -29,13 +29,13 @@
             <div class="hero-content">
                 <h2>Dein System ist Sicherheit wert</h2>
                 <p>X_0 Antivirus - Zuverlässiger Schutz vor Viren, Malware und Bedrohungen</p>
-                <button class="cta-button">JETZT KOSTENLOS TESTEN</button>
+                <button class="cta-button" onclick="scrollToSection('pricing')">JETZT KOSTENLOS TESTEN</button>
                 <p class="trial-info">✓ 3 Monate kostenlos • Danach 30€/Monat</p>
             </div>
         </section>
 
         <!-- Features -->
-        <section class="features">
+        <section class="features" id="features">
             <h2>FEATURES</h2>
             <div class="feature-grid">
                 <div class="feature-box">
@@ -66,7 +66,7 @@
         </section>
 
         <!-- Pricing Section -->
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <h2>ABONNEMENT</h2>
             <div class="pricing-box">
                 <h3>X_0 ANTIVIRUS PRO</h3>
@@ -86,7 +86,7 @@
         </section>
 
         <!-- Download Section -->
-        <section class="download">
+        <section class="download" id="download">
             <h2>DOWNLOAD</h2>
             <p>Wähle dein Betriebssystem:</p>
             <div class="download-buttons">
@@ -98,7 +98,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>KONTAKT</h2>
             <form class="contact-form">
                 <input type="text" placeholder="Dein Name" required>
@@ -119,5 +119,14 @@
             </p>
         </footer>
     </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
 </body>
 </html>
